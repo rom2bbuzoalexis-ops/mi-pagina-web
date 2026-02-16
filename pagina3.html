@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La historia de dos personas que se aman con locura</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Georgia', serif;
+    background: radial-gradient(circle at center, #0b1d3a, #000);
+    overflow-x:hidden;
+    color:#fff;
+    text-align:center;
+}
+.background{
+   position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.background span{
+    position:absolute;
+    display:block;
+    font-size:30px;
+    animation: animate 20s linear infinite;
+    bottom:-150px;
+}
+/* FONDO ESPACIAL */
+.space{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+/* ESTRELLAS */
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+}
+
+/* ORBITA */
+.orbit{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:520px;
+    height:520px;
+    margin:-260px;
+    animation: spin 40s linear infinite;
+}
+
+/* LUNA */
+.moon{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:180px;
+    height:180px;
+    margin-left:-90px;
+    border-radius:50%;
+    background: radial-gradient(circle at 30% 30%, #fff, #ccc, #999);
+    box-shadow:0 0 45px rgba(255,255,255,0.9);
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+h1{
+    margin-top:40px;
+    text-shadow:2px 2px 5px #000;
+}
+
+.contenido{
+    max-width:800px;
+    margin:40px auto;
+    background:rgba(0,0,0,0.55);
+    padding:30px;
+    border-radius:20px;
+}
+
+footer{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+<div class="background">
+    <span style="left:5%">❤️</span>
+    <span style="left:15%; animation-delay:2s;">🌹</span>
+    <span style="left:25%; animation-delay:4s;">❤️</span>
+    <span style="left:35%; animation-delay:1s;">🌹</span>
+    <span style="left:50%; animation-delay:3s;">❤️</span>
+    <span style="left:65%; animation-delay:5s;">🌹</span>
+    <span style="left:75%; animation-delay:6s;">❤️</span>
+    <span style="left:85%; animation-delay:8s;">🌹</span>
+    <span style="left:95%; animation-delay:10s;">❤️</span>
+</div>
+<div class="space">
+    <div class="orbit">
+        <div class="moon"></div>
+    </div>
+</div>
+
+<h1>La historia de dos personas que se aman con locura</h1>
+
+<div class="contenido">
+<p>
+Lo que comenzó sin esperarlo, hoy es una historia hermosa que seguimos escribiendo juntos. 
+Todo empezó con miradas tímidas y conversaciones sencillas que poco a poco se volvieron necesarias. 
+Sin darnos cuenta, nuestras risas se hicieron costumbre y nuestros días empezaron a tener más sentido cuando estábamos uno al lado del otro.
+</p>
+
+<p>
+Nuestro primer beso marcó un antes y un después. Desde ese momento supimos que lo nuestro no era casualidad, era destino. 
+Cada detalle, cada salida, cada momento compartido fue construyendo algo real, sincero y fuerte.
+</p>
+
+<p>
+Hoy quiero dedicarte estas palabras a ti, mi amor. Feliz cumpleaños número 18. 
+Estoy orgulloso de la mujer increíble en la que te estás convirtiendo. 
+Gracias por regalarme tu amor, tu tiempo y tu sonrisa. 
+También celebro nuestro aniversario, el día que decidimos ser novios y comenzar oficialmente esta aventura juntos.
+</p>
+
+<p>
+Que este nuevo año de vida esté lleno de sueños cumplidos, metas alcanzadas y momentos inolvidables. 
+Prometo seguir cuidándote, apoyándote y amándote con locura todos los días.
+</p>
+<a href="https://drive.google.com/file/d/1aiydWgkV6d7v4KdvhLy1IhQvkedW7JA5/view?usp=drive_link">
+    <button type="button">click aqui 😉 </button>
+    </a>
+</div>
+<center>
+  <p>Haz clic en la imagen de la BeBe 👇🏼</p>
+<img 
+  src="img2.jpeg.jpeg"
+  alt="Reproducir audio"
+  height="650" 
+  style="width:550px; cursor:pointer;"
+  onclick="reproducirAudio()"
+>
+</center>
+<audio id="miAudio">
+  <source src="audio.mp3.mpeg" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+<script>
+  function reproducirAudio() {
+    const audio = document.getElementById("miAudio");
+    audio.play();
+  }
+</script>
+
+<footer>
+att: Tu bebito
+</footer>
+
+<script>
+for(let i=0;i<200;i++){
+    const s=document.createElement("div");
+    s.className="star";
+    s.style.top=Math.random()*100+"%";
+    s.style.left=Math.random()*100+"%";
+    s.style.opacity=Math.random();
+    document.querySelector(".space").appendChild(s);
+}
+
+</body>
+</html>
